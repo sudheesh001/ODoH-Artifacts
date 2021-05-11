@@ -31,7 +31,7 @@ A one time dependency installation and build script for the server is provided a
 Once `mkcert` is installed, create a new local CA with a certificate valid for `localhost` and `127.0.0.1` by running
 
 ```shell script
-$ mkcert -key-file key.pem -cert-file cert.pem 127.0.0.1 localhost
+$ mkcert -key-file key.pem -cert-file cert.pem 127.0.0.1 localhost <more_hostnames> <more_ips>
 ```
 
 This will create `key.pem` and `cert.pem` in the same directory with a valid certificate.
