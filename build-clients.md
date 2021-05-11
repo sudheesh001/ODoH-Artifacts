@@ -74,3 +74,45 @@ target = "https://odoh.cloudflare-dns.com"
 ```
 
 Integration tests can be run using `cargo test`.
+
+### Running Benchmarks
+
+The `golang` client has a `bench` submodule which queries the ODoH targets and proxies with a randomly chosen set of domain names from a list.
+
+The Tranco Million dataset can be obtained using the `scripts/fetch-datasets.sh` which will download, extract and prepare the dataset
+in the format necessary for ODoH Client for benchmarking. The dataset will be available at `dataset/tranco-1m.csv`.
+
+To run the `fetch-datasets.sh` script successfully, `awk` and `sed` are necessary tools.
+
+The benchmarks can be run as follows:
+
+```shell script
+./odoh-client bench --target odoh.cloudflare-dns.com \
+                    --proxy odoh1.surfdomeinen.nl \
+                    --pick 200 --numclients 10 --rate 15 \
+                    --data dataset/tranco-1m.csv \
+                    --out result.json
+```
+
+and more details are available in `--help`
+
+```text
+NAME:
+   Oblivious DNS over HTTPS Client Command Line Interface bench - Performs a benchmark for ODOH Target Resolver
+
+USAGE:
+   Oblivious DNS over HTTPS Client Command Line Interface bench [command options] [arguments...]
+
+OPTIONS:
+   --data value               (default: "dataset.csv")
+   --pick value               (default: 10)
+   --numclients value         (default: 10)
+   --rate value               (default: 15)
+   --logout value             (default: "log.txt")
+   --out value                Filename to save serialized JSON response from benchmark execution (eg. output.json). If no filename is provided, or failure to write to file, the default will print to console.
+   --target value             Hostname:Port format declaration of the target resolver hostname (default: "localhost:8080")
+   --proxy value, -p value    Hostname:Port format declaration of the proxy hostname
+   --dnstype value, -t value  (default: "A")
+```
+
+The output result will be available at `log.txt` and serialized JSON in `result.json` passed as value to `--out`.
