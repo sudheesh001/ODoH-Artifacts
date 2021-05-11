@@ -194,3 +194,18 @@ odohproxy.yourdomain.com:443 {
 ### Google App Engine (GAE)
 
 The `odoh-server` can be installed on GAE using `make deploy-proxy` or `make deploy-target` after the correct `gcloud` configurations locally. An example deployment is available at: https://odoh-proxy-dot-odoh-target.wm.r.appspot.com/ which can be used as a `proxy`
+
+### Heroku and Scalingo Deployments
+
+Heroku and Scalingo allow the usage of easy deploy buttons and can also be deployed by browsing to:
+
+```text
+https://www.heroku.com/deploy/?template=https://github.com/cloudflare/odoh-server-go
+https://my.scalingo.com/deploy?source=https://github.com/cloudflare/odoh-server-go
+```
+
+or by clicking the buttons below.
+
+| Heroku Deployment | Scalingo Deployment |
+| ------------------|---------------------|
+| [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy/?template=https://github.com/cloudflare/odoh-server-go) | [![Deploy](https://cdn.scalingo.com/deploy/button.svg)](https://my.scalingo.com/deploy?source=https://github.com/cloudflare/odoh-server-go) |
