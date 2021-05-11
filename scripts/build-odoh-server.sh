@@ -10,6 +10,6 @@ eval $(~/.linuxbrew/bin/brew shellenv)
 brew install hello  # To test correct installation of homebrew for linux
 brew install mkcert
 
-cd ~/artifacts/odoh-server-go
+cd ~/artifacts/odoh-server-go || exit
 make
 make all

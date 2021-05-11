@@ -131,5 +131,6 @@ drwxrwxr-x 6 ubuntu ubuntu 4096 <Month> <Time> odoh-client-rs/
 drwxrwxr-x 4 ubuntu ubuntu 4096 <Month> <Time> odoh-server-go/
 ```
 
-1. To build and test ODoH Proxies and Targets read [this documentation](build-server-proxy.md) in the `build-server-proxy.md` file
-2. To build and test ODoH Clients read [this documentation](build-clients.md) in the `build-clients.md` file
+1. To build and test ODoH Proxies and Targets read [server and proxy build documentation](build-server-proxy.md) in the `build-server-proxy.md` file.
+2. To build and test ODoH Clients read [client build documentation](build-clients.md) in the `build-clients.md` file.
+3. To deploy the ODoH Server as a Proxy or Target read [server deployment documentation](deploy-server.md) in the `deploy-server.md` file.
