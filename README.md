@@ -1,16 +1,16 @@
 # Oblivious DNS over HTTPS (ODoH): A Practical Privacy Enhancement to DNS
 
 ### Artifacts Available
-| # | Artifact Type                   | Link to Artifact                             |
-|---|---------------------------------|----------------------------------------------|
-| 1 | ODoH Target Server and Proxy    | https://github.com/cloudflare/odoh-server-go |
-| 2 | ODoH Go lang Client             | https://github.com/cloudflare/odoh-client-go |
-| 3 | ODoH Rust Client                | https://github.com/cloudflare/odoh-client-rs |
-| 4 | ODoH Go lang Library            | https://github.com/cloudflare/odoh-go        |
-| 5 | ODoH Rust Library               | https://github.com/cloudflare/odoh-rs        |
-| 6 | Formal Analysis Model (Tamarin) | https://github.com/cloudflare/odoh-analysis  |
-| 7 | Deployed ODoH Target            | https://odoh.cloudflare-dns.com/             |
-| 8 | Deployed ODoH Proxy             | https://odoh1.surfdomeinen.nl/               |
+| # | Artifact Type                   | Link to Artifact                             | License |
+|---|---------------------------------|----------------------------------------------|---------|
+| 1 | ODoH Target Server and Proxy    | https://github.com/cloudflare/odoh-server-go |   MIT   |
+| 2 | ODoH Go lang Client             | https://github.com/cloudflare/odoh-client-go |   MIT   |
+| 3 | ODoH Rust Client                | https://github.com/cloudflare/odoh-client-rs |  BSD-2  |
+| 4 | ODoH Go lang Library            | https://github.com/cloudflare/odoh-go        |   MIT   |
+| 5 | ODoH Rust Library               | https://github.com/cloudflare/odoh-rs        |  BSD-2  |
+| 6 | Formal Analysis Model (Tamarin) | https://github.com/cloudflare/odoh-analysis  |  BSD-3  |
+| 7 | Deployed ODoH Target            | https://odoh.cloudflare-dns.com/             |         |
+| 8 | Deployed ODoH Proxy             | https://odoh1.surfdomeinen.nl/               |         |
 
 ### Paper Reference
 
